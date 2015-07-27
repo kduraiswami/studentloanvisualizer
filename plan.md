@@ -3,8 +3,8 @@ as a user I want to see on a map where in a state student loans are in repayment
 Logic Steps: 
 Render a normal google map (done)
 create loan portfolio model (migration)
-import xls file into a rake:seed task
-seed db properly
+import xls file into a rake:seed task (done)
+seed db properly (done)
 pass json object with all locations on index route
 create JS ENV variable on layout file
 create markers as part of map initialize function
@@ -15,24 +15,10 @@ Visual Steps:
 good icon for the marker placers
 good zoom and center of map over the US
 
+Next Step: 
+Pass json object with one loan portfolio and post to google for one marker
 
-
-next thing will be to seed the db and create ruby objects of the LoanPortfolio 
-the schema for the LoanPortfolio Model is as follows:
-
-
-t.string institution_name
-t.string address
-t.string city
-t.string St
-t.string ZIP
-t.string borrowers_in_repayment
-t.string borrowers_in_default
-t.string default_rate
-t.string total_borrowers_default
-t.string oustanding_principal
-
-I will post to google the markers just like I did with sisfly and probably use a custom icon and maybe legend to denote a loan_portfolio location
+post to google the markers just like I did with sisfly and probably use a custom icon and maybe legend to denote a loan_portfolio location
 
 steps - 
 
