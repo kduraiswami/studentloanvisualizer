@@ -10,7 +10,7 @@ class CreateLoanPortfolios < ActiveRecord::Migration
 		t.string "borrowers_in_default"
 		t.string "default_rate"
 		t.string "total_borrowers_default"
-		t.string "outsanding_principal"
+		t.string "outstanding_principal"
 		t.timestamps
 	end
   end
