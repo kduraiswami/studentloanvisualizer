@@ -1,17 +1,24 @@
-The most boring way for me to do this is: 
+as a user I want to see on a map where in a state student loans are in repayment vs default
 
-I can put a pin on every address that if you click will give the information associated with that university
+Logic Steps: 
+Render a normal google map (done)
+create loan portfolio model (migration)
+import xls file into a rake:seed task
+seed db properly
+pass json object with all locations on index route
+create JS ENV variable on layout file
+create markers as part of map initialize function
+markers will include text associated with loan portfolio
+location will come from a combine string of the addresses provided
 
-one value add could be a heat map, but that would make it difficult to single in on what the specific college in question is
+Visual Steps: 
+good icon for the marker placers
+good zoom and center of map over the US
 
-as a user I want to see on a map where in a state loans are in repayment vs default
 
-I can click on a marker and get this information in an unstyled way
-
-First thing will be to render a map on the page
 
 next thing will be to seed the db and create ruby objects of the LoanPortfolio 
-- the schema for the LoanPortfolio Model is as follows:
+the schema for the LoanPortfolio Model is as follows:
 
 
 t.string institution_name
@@ -27,18 +34,8 @@ t.string oustanding_principal
 
 I will post to google the markers just like I did with sisfly and probably use a custom icon and maybe legend to denote a loan_portfolio location
 
-technologies used - 
-Sinatra
-AR
-JS
-MapCanvas
-
-
-
 steps - 
 
-Lets create a blank sinatra skeleton
-lets look at my past project and put the same canvas on for maps
 lets do research on how to import an xls file into ruby objects
 lets post to google all 1800 of my markers with the text box of info
 write some rspec/jasmine tests
