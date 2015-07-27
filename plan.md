@@ -41,6 +41,7 @@ Lets create a blank sinatra skeleton
 lets look at my past project and put the same canvas on for maps
 lets do research on how to import an xls file into ruby objects
 lets post to google all 1800 of my markers with the text box of info
+write some rspec/jasmine tests
 
 
 
