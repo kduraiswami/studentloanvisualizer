@@ -5,8 +5,8 @@ Render a normal google map (done)
 create loan portfolio model (migration)
 import xls file into a rake:seed task (done)
 seed db properly (done)
+Need to combine string of address into one field (done)
 
-Need to combine string of address into one field 
 Need to use geocoder to create a lat-lng for this address to post to google
 
 pass json object with all locations on index route
