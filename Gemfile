@@ -15,6 +15,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'roo', '~>2.1.0'
+gem 'geocoder'
 
 group :test do
   gem 'shoulda-matchers'
