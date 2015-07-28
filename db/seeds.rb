@@ -14,10 +14,7 @@ end
 raw_student_loan_portfolios.each do |individual_loan|
 	LoanPortfolio.create(
 		"institution_name" => individual_loan[2].value,
-		"address" => individual_loan[3].value,
-		"city" => individual_loan[4].value,
-		"St" => individual_loan[5].value,
-		"ZIP" => individual_loan[6].value,
+		"address" => "#{individual_loan[3].value}" + ' ' + "#{individual_loan[4].value}" + ', '+ "#{individual_loan[5].value}" + ' ' + "#{individual_loan[6].value}", 
 		"borrowers_in_repayment" => individual_loan[7].value,
 		"borrowers_in_default" => individual_loan[8].value,
 		"default_rate" => individual_loan[9].value,
