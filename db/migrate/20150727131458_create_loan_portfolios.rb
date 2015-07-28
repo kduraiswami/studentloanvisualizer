@@ -8,6 +8,8 @@ class CreateLoanPortfolios < ActiveRecord::Migration
 		t.string "default_rate"
 		t.string "total_borrowers_default"
 		t.string "outstanding_principal"
+		t.float "longitude"
+		t.float "latitude"
 		t.timestamps
 	end
   end
