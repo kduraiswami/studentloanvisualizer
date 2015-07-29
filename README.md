@@ -18,6 +18,11 @@ The Roo gem to parse the excel file into ruby objects in the seed file.<br>
 The Geocoder gem to create the longitude and latitude on creation of LoanPortfolio objects.<br>
 The Google Maps API with custom markers and styling.<br>
 
+Points of note:
+The logic to create usable ruby objects in the db/seeds.rb file and use of string interpolation to create one field for address<br>
+Use of Geocoder gem on creation of LoanPortfolio objects.<br>
+Logic in public/js/application.js file to plot all Loan Portfolios with information windows.<br>
+
 Using the Application: 
 The markers on the map are each a geocoded location of a Loan Portfolio of a specific institution. Clicking on a marker will show an institution name as well as the default rate and outstanding principal of its loan portfolio. I tried to take the perspective of a user trying to understand which specific institutions are under the most duress from borrowers. 
 
