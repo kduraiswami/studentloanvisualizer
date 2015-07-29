@@ -7,18 +7,18 @@
 		map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
 	var plotLoanPortfolios = function(loanPortfolioData){
-		// loanPortfolioData.forEach(function(loan){
+		loanPortfolioData.forEach(function(loan){
 
 			var loanPortfolioIcon = "images/loanPortfolioIcon.png"
 
 			var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">'+loanPortfolioData.institution_name+'</h1>'+
+            '<h1 id="firstHeading" class="firstHeading">'+loan.institution_name+'</h1>'+
             '<div id="bodyContent">'+
-            '<p> '+ 'Default Rate: ' + loanPortfolioData.default_rate +' </p>'+ 
-            '<p> '+ 'Outstanding Principal: $' + loanPortfolioData.outstanding_principal+' </p>'+
-            '<p> '+ 'Institution Address: ' + loanPortfolioData.address +'  </p>'+
+            '<p> '+ 'Default Rate: ' + loan.default_rate +' </p>'+ 
+            '<p> '+ 'Outstanding Principal: $' + loan.outstanding_principal+' </p>'+
+            '<p> '+ 'Institution Address: ' + loan.address +'  </p>'+
             '</div>'+
             '</div>';
 
@@ -26,18 +26,18 @@
             	content: contentString
             })
 
-			var loanLatLng = new google.maps.LatLng(loanPortfolioData.latitude, loanPortfolioData.longitude)
+			var loanLatLng = new google.maps.LatLng(loan.latitude, loan.longitude)
 			var marker = new google.maps.Marker({
 				position: loanLatLng,
 				map: map,
 				icon: loanPortfolioIcon,
-				title: loanPortfolioData.institution_name
+				title: loan.institution_name
 			})
 
 			google.maps.event.addListener(marker, 'click', function() {
               infowindow.open(map,marker);
             });
-		// })
+		})
 	}
 
 	plotLoanPortfolios(ENV.loanPortfolio)

@@ -1,4 +1,4 @@
 get '/' do
-	javascript_env['loanPortfolio'] = LoanPortfolio.find(2)
+	javascript_env['loanPortfolio'] = LoanPortfolio.all
 	erb :index
 end
