@@ -5,6 +5,8 @@
 		var center = new google.maps.LatLng(39.50 ,  -98.35);
 		var mapOptions = {zoom: 5, center: center};
 		map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		plotLoanPortfolios(ENV.loanPortfolio)
+	}
 
 	var plotLoanPortfolios = function(loanPortfolioData){
 		loanPortfolioData.forEach(function(loan){
@@ -27,6 +29,7 @@
             })
 
 			var loanLatLng = new google.maps.LatLng(loan.latitude, loan.longitude)
+
 			var marker = new google.maps.Marker({
 				position: loanLatLng,
 				map: map,
@@ -38,9 +41,6 @@
               infowindow.open(map,marker);
             });
 		})
-	}
-
-	plotLoanPortfolios(ENV.loanPortfolio)
 	}
 
 	$(function(){
