@@ -1,5 +1,7 @@
 class LoanPortfolio < ActiveRecord::Base
-	include Geocoder
-	geocoded_by "address"
+	require 'geocoder'
+	require "geocoder/railtie"
+	Geocoder::Railtie.insert
+	geocoded_by :address
 	after_validation :geocode, if: ->(obj){ obj.address.present? and obj.address_changed? }
 end
