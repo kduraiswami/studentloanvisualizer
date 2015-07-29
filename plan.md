@@ -10,26 +10,17 @@ Need to use geocoder to create a lat-lng for this address to post to google(done
 create JS ENV variable on layout file(done)
 place marker for one loan portfolio(done)
 markers will include text associated with loan portfolio(done)
+pass json object with all locations on index route(done)
 
-pass json object with all locations on index route
+clean up initialize function
 
-create markers as part of map initialize function(need to clean this function up)
 
 Visual Steps: 
 good icon for the marker placers(done)
 good zoom and center of map over the US(done)
+
 create a thorough and nice readme.md
-
-Next Step: 
-Pass json object with one loan portfolio and post to google for one marker
-
-post to google the markers just like I did with sisfly and probably use a custom icon and maybe legend to denote a loan_portfolio location
-
-steps - 
-
-lets do research on how to import an xls file into ruby objects
-lets post to google all 1800 of my markers with the text box of info
-write some rspec/jasmine tests
+create a modal with website explanation
 
 
 
