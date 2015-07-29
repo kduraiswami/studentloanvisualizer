@@ -1,7 +1,6 @@
 
 !function(){
 
-
 	var initializeMap = function(){
 		
 		var center = new google.maps.LatLng(39.50 , -98.35);
