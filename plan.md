@@ -11,15 +11,15 @@ create JS ENV variable on layout file(done)
 place marker for one loan portfolio(done)
 markers will include text associated with loan portfolio(done)
 pass json object with all locations on index route(done)
-
 clean up initialize function(done)
 
+write some rspec
 
 Visual Steps: 
 good icon for the marker placers(done)
 good zoom and center of map over the US(done)
 
-create a thorough and nice readme.md
+create a thorough and nice readme.md(done)
 
 
 
