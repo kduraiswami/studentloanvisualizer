@@ -43,40 +43,6 @@
 	plotLoanPortfolios(ENV.loanPortfolio)
 	}
 
-
-	   // var plotRelevantCrimes = function(crimeData){
-    //     crimeData.forEach(function(crime){
-    //       if (crime != undefined){
-    //         var contentString = '<div id="content">'+
-    //         '<div id="siteNotice">'+
-    //         '</div>'+
-    //         '<h1 id="firstHeading" class="firstHeading">'+crime.descript+'</h1>'+
-    //         '<div id="bodyContent">'+
-    //         '<p> '+ crime.date +' </p>'+
-    //         '<p> '+ crime.dayofweek+' </p>'+
-    //         '<p> '+ crime.address +'  </p>'+
-    //         '</div>'+
-    //         '</div>';
-
-    //         var infowindow = new google.maps.InfoWindow({
-    //           content: contentString
-    //         });
-
-    //         var crimeLatlng = new google.maps.LatLng(Number(crime.y), Number(crime.x));
-    //         var marker = new google.maps.Marker({
-    //           position: crimeLatlng,
-    //           map: map,
-    //           title: crime.descript
-    //         });
-    //         google.maps.event.addListener(marker, 'click', function() {
-    //           infowindow.open(map,marker);
-    //         });
-    //       }
-    //     })
-
-    //   }
-    //     plotRelevantCrimes(response["crimeData"]);
-
 	$(function(){
 		if (document.getElementById('map-canvas')) initializeMap();
 	});
