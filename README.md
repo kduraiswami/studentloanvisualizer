@@ -19,6 +19,7 @@ The Geocoder gem to create the longitude and latitude on creation of LoanPortfol
 The Google Maps API with custom markers and styling.<br>
 
 Points of note:
+
 The logic to create usable ruby objects in the db/seeds.rb file and use of string interpolation to create one field for address<br>
 Use of Geocoder gem on creation of LoanPortfolio objects.<br>
 Logic in public/js/application.js file to plot all Loan Portfolios with information windows.<br>
