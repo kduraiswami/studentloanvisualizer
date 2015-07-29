@@ -3,7 +3,7 @@ This is a tool to help visualize student loan lenders throughout the nation and 
 The Steps to Running this Application Are: 
 
 1. clone or fork repository down 
-From commandline in project root directory:
+2. From commandline in project root directory:
 3. run be bundle install
 4. run be rake:db create
 5. run be rake:db migrate
