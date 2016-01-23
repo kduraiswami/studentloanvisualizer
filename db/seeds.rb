@@ -2,7 +2,7 @@ require 'roo'
 require 'open-uri'
 require 'pp'
 
-excel_student_loan_portfolios = Roo::Spreadsheet.open('db/loanportfoliodata.xlsx')
+excel_student_loan_portfolios = Roo::Spreadsheet.open("db/loanportfoliodata.xlsx")
 excel_student_loan_portfolios = Roo::Excelx.new("db/loanportfoliodata.xlsx")
 
 raw_student_loan_portfolios = []
